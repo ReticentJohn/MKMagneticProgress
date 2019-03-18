@@ -196,7 +196,7 @@ open class MKMagneticProgress: UIView {
 //        percentLabel.textColor = self.progressShapeColor
         self.addSubview(percentLabel)
         percentLabel.text = String(format: "%.1f%%", progress * 100)
-        
+        percentLabel.adjustsFontSizeToFitWidth = true
         
         titleLabel.frame = CGRect(x: (self.bounds.size.width-titleLabelWidth)/2, y: self.bounds.size.height-21, width: titleLabelWidth, height: 21)
         
